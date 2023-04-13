@@ -43,7 +43,6 @@ public class WebSecurityConfig {
                 }
         );
         //configurar pagina de login
-
         http.formLogin((login) -> {
             login.loginPage("/login").permitAll().defaultSuccessUrl("/drive", true);
         });
